@@ -783,7 +783,7 @@ begin
       g_appDataDir := g_appPath + FDataPath;
     g_appDataDir := IncludeTrailingPathDelimiter(g_appDataDir);
   end;
-
+  ForceDirectories(g_appDataDir);
   if FIniFileName <> '' then
     g_appIni := TIniFile.Create(g_appDataDir + FIniFileName);
 
