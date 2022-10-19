@@ -770,7 +770,7 @@ begin
   if FAppId <> '' then
     g_appId := FAppId;
   if FName <> '' then
-    g_appName := g_appId;
+    g_appName := FName;
   if FDisplayName <> '' then
     g_appDisplayName := FDisplayName;
 
